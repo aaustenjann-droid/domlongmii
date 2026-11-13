@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-family: 'Kantumruy Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.flat-card {
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
+
+.flat-button {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.flat-button:hover {
+  background-color: #1d4ed8;
+}
+
+.flat-button:active {
+  transform: scale(0.98);
+}
+
+.flat-input {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  color: #0f172a;
+  transition: all 0.2s ease;
+}
+
+.flat-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.font-khmer {
+  font-family: 'Kantumruy Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-moul {
+  font-family: 'Moul', 'Moulpali', cursive, serif;
+}
+
+.font-battambang {
+  font-family: 'Battambang', sans-serif;
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-script {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background-color: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-area, #printable-area * {
+    visibility: visible;
+  }
+
+  #printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210mm !important;
+    max-width: 210mm !important;
+    min-height: 297mm !important;
+    margin: 0 !important;
+    padding: 12mm 14mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: white !important;
+  }
+}
